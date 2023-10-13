@@ -11,7 +11,6 @@ import java.util.*;
 
 import static org.mockito.BDDMockito.given;
 
-
 @ExtendWith(MockitoExtension.class)
 public class ExaminerServiceTest {
     @Mock

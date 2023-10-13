@@ -11,11 +11,9 @@ public class Question {
         this.answer = answer;
     }
 
-
     public String getQuestion() {
         return question;
     }
-
 
     public String getAnswer() {
         return answer;
