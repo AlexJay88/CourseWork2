@@ -11,7 +11,6 @@ import java.util.Set;
 public class JavaQuestionServiceTest {
      private QuestionService out=new JavaQuestionService();
 
-
     private final List<Question> list = new ArrayList() {
         {
             add(new Question("Какое самое быстрое наземное животное?", "Гепард"));

@@ -9,3 +9,4 @@ public class NumberOfQuestionsExceed extends RuntimeException{
         super("Превышено количество вопросов");
     }
 }
+
