@@ -7,10 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CourseWorkOctoberApplication {
 
 
-	public static void main(String[] args) {
-	SpringApplication.run(CourseWorkOctoberApplication.class, args);
-}
-
+    public static void main(String[] args) {
+        SpringApplication.run(CourseWorkOctoberApplication.class, args);
+    }
 
 
 }

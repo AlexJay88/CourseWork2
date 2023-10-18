@@ -24,7 +24,7 @@ public class Question {
         if (this == o) return true;
         if (!(o instanceof Question question1)) return false;
 
-        return  question.equals(question1.question)&&answer.equals(
+        return question.equals(question1.question) && answer.equals(
                 question1.answer);
 
     }
@@ -37,6 +37,6 @@ public class Question {
     @Override
     public String toString() {
         return "Question: " + question + '\n' +
-                "Answer: " + answer ;
+                "Answer: " + answer;
     }
 }
