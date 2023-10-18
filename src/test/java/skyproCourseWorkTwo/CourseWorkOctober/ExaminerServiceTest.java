@@ -11,7 +11,6 @@ import java.util.*;
 
 import static org.mockito.BDDMockito.given;
 
-
 @ExtendWith(MockitoExtension.class)
 public class ExaminerServiceTest {
     @Mock
@@ -32,5 +31,6 @@ public class ExaminerServiceTest {
         Collection<Question> actual = new HashSet<>(examinerService.getQuestions(1));
         Assertions.assertEquals(expected, actual);
     }
+
 
 }
