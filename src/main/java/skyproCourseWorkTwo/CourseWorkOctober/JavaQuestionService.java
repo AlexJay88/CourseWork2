@@ -7,16 +7,12 @@ import java.util.*;
 @Service
 public class JavaQuestionService implements QuestionService{
     private final Set<Question>questions=new HashSet<>(Set.of());
+    Random random = new Random();
 
     @Override
     public Question add(String question, String answer) {
         Question q=new Question(question,answer);
-        if (checkIfContains(q)) {
-            throw new QuestionAlreadyAddedException("Этот вопрос уже был добавлен");
-        }else {
-            questions.add(q);
-        }
-        return q;
+        return add(q);
 
     }
 
@@ -48,7 +44,6 @@ public class JavaQuestionService implements QuestionService{
 
     @Override
     public Question getRandomQuestion() {
-        Random random = new Random();
         int randomNumber=random.nextInt(questions.size());
         List<Question>list=new ArrayList<>(questions);
         return list.get(randomNumber);
@@ -57,5 +52,6 @@ public class JavaQuestionService implements QuestionService{
         return questions.contains(question);
      }
     }
+
 
 
